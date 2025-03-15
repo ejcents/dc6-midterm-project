@@ -22,6 +22,7 @@ export default function TodosPage() {
         const res = await fetch("https://dummyjson.com/todos");
         const data = await res.json();
         setTodos(data.todos);
+        
       // gi fix ang "err" kay mo error if wala ang comment sa ubos
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
