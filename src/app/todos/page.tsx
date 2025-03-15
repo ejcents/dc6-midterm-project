@@ -20,7 +20,7 @@ export default function TodosPage() {
         const data = await res.json();
         setTodos(data.todos);
 
-      // gi fix ang "err" disable sa next line sa try-catch
+      // gi fix ang "err" disable sa next line sa try-catch, ayaw hilabti
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch todos.");
