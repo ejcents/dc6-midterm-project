@@ -1,9 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-// para mawala ang error issue nga wa ma define ang TodoCard sa pag import (quick fix sa vscode)
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { TodoCard } from "../components/card";
 
 interface Todo {
   id: number;
@@ -22,7 +19,7 @@ export default function TodosPage() {
         const res = await fetch("https://dummyjson.com/todos");
         const data = await res.json();
         setTodos(data.todos);
-        
+
       // gi fix ang "err" kay mo error if wala ang comment sa ubos
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
@@ -44,7 +41,7 @@ export default function TodosPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
       <h1 className="text-4xl font-extrabold capitalize text-center text-white mb-8">
-        📝 to dos
+        to dos
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
