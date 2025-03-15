@@ -58,7 +58,7 @@ export default function TodosPage() {
                 todo.completed ? "bg-green-500 text-white" : "bg-red-500 text-white"
               }`}
             >
-              {todo.completed ? "Completed" : "Pending"}
+              {todo.completed ? "Completed" : "Not Completed"}
             </span>
           </div>
         ))}

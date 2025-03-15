@@ -16,7 +16,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div className="border rounded-xl shadow-lg p-5 bg-white hover:shadow-xl transition-shadow duration-300">
       <h2 className="text-2xl font-bold text-gray-800">{product.title}</h2>
-      <p className="text-gray-600 mt-2">{product.description}</p>
+      <p className="text-gray-600 mt-2">{product.description} </p>
     </div>
   );
 };
