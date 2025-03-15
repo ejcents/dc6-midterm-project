@@ -35,15 +35,15 @@ export default function TodosPage() {
   }, []);
 
   if (loading)
-    return <p className="text-center text-gray-500 text-lg">Loading Todos...</p>;
+    return <p className="text-center capitalize text-gray-500 text-lg">loading todos...</p>;
 
   if (error)
     return <p className="text-center text-red-500 text-lg">{error}</p>;
 
   return (
     <div className="max-w-4xl mx-auto p-8">
-      <h1 className="text-4xl font-extrabold text-center text-white mb-8">
-        📝 To Dos
+      <h1 className="text-4xl font-extrabold capitalize text-center text-white mb-8">
+        📝 to dos
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
